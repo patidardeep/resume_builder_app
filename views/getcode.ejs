@@ -1,0 +1,23 @@
+<%- include('./partials/header')%>
+<div class="container w-100 d-flex justify-content-center align-center">
+<form
+            action="/code/<%= id%>"
+            method="post"
+            class="form-control mt-5 text-center w-50"
+        >
+            <h3 class="create text-success">Enter Code</h3>
+            <input
+                type="password"
+                class="name text-info mt-2 fs-2 w-75"
+                placeholder="********"
+                name="code"
+            />
+
+            <button class="p-2 btn btn-primary w-75 mb-4">
+                Submit Code
+            </button>
+            <br />
+            <a href="/">home</a>
+        </form>
+    </div>
+<%- include('./partials/footer')%>

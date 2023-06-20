@@ -1,0 +1,39 @@
+<div id="signup">
+<%- include('./partials/header')%>
+<img style="width: 200px; height: 200px;" src="https://media.istockphoto.com/id/951908336/photo/house-plant-sansevieria-trifasciata.jpg?b=1&s=170667a&w=0&k=20&c=OgoAyos0fhscLPdiXs23gyW6dHHM_RoLZk2MxQkXD70=" alt="">
+<div id="boxone" style=" background-color: rgb(2, 20, 73);">
+<div class="container mt-5">
+<h3 class="text-white">Create your account to build awesome resume</h3>
+</div>
+<form action="/signup" method="post">
+<input 
+type="text"
+ placeholder="username"
+  name="username"
+  class="mb-4 from-control w-50 rounded">
+
+<input 
+type="email" 
+placeholder="email"
+ name="email"
+ class="mb-4 from-control w-50 rounded">
+<input 
+type="password" 
+placeholder="password" 
+name="password"
+class="mb-4 from-control w-50 rounded">
+<input 
+type="contact" 
+placeholder="contact" 
+name="contact"
+class="mb-4 from-control w-50 rounded">
+<br>
+
+<button class="btn btn-success">Create Account</button>
+</form>
+<p class="text-white">Already have an account?<a href="signin">sign in</a></p>
+</div>
+<div id="two">
+<img src="https://media.istockphoto.com/id/951908336/photo/house-plant-sansevieria-trifasciata.jpg?b=1&s=170667a&w=0&k=20&c=OgoAyos0fhscLPdiXs23gyW6dHHM_RoLZk2MxQkXD70=" alt=""></div>
+<%- include('./partials/footer')%>
+</div>

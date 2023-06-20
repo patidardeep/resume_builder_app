@@ -1,0 +1,19 @@
+<%- include('./partials/header')%>
+<form
+action="/send-mail"
+method="post"
+class="container mt-5 text-center p-5 w-50"
+>
+<h3 class="fw-lighter mb-3">Forget Password</h3>
+<input
+    type="email"
+    class="form-control m-auto w-75 p-2 mb-4"
+    placeholder="email"
+    name="email"
+/>
+
+<button class="p-2 btn btn-primary w-75 mb-4">Send mail</button>
+<br />
+<a href="/">home</a>
+</form>
+<%- include('./partials/footer')%>

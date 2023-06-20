@@ -1,0 +1,32 @@
+<div id="signin">
+    <div id="overlay">
+<%- include('./partials/header')%>
+<div id="box">
+<div class="container mt-5">
+    <h3  class="mb-4">Create your account to build awesome resume</h3>
+    
+    <form action="/signin" method="post">
+        <input
+        type="text"
+        placeholder="Username"
+        name="username"
+        class="mb-4 from-control w-50 rounded">
+        
+        <input 
+        type="password"
+        placeholder="Password"
+        name="password"
+        class="mb-4 from-control w-50 rounded">
+        <br>
+
+        <p class="d-flex w-75 justify-content-end text-danger"><a href="/forget">Forget Password</a></p>
+        
+        <button class="btn btn-success"> Create Account</button>
+        <!-- <a class="btn btn-success" href="">signin</a> -->
+    </form>
+    <p>Doesn't have an account ?<a href="/signup">sign up</a></p>
+</div>
+</div>
+</div>
+<%- include('./partials/footer')%>
+</div>
